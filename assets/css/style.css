@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/gravel.png);
+}
+
+header {
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+  }
+  
+  .container{
+    
+    width: 960px;
+    height: 80px;
+    margin: 0 auto;
+   
+  } 
+  #name {
+      float: left;
+      text-align: center;
+      color: white;
+      background-color: turquoise;
+      padding: 20px; 
+      font-size: 32px;  
+  }
+
+
+ /* /* #name {
+    float: left;
+    width: 15%;
+    height: 10%;
+    text-align: center;
+    color: white;
+    background-color: turquoise;
+    margin-top: auto;
+    margin-left: 17%;
+    padding-top: 20px;   
+} */
+ 
+/* .container {
+    background-color: white;
+    width: 100%;
+    height: 3.4em;
+    border-bottom: 1px solid gray; 
+
+} */
+/* #topnav {
+    float: right;
+    list-style-type: none;
+      
+} */
+.wrapper{
+    width: 960px;
+    margin: 50px auto;
+}
+
+#topnav {
+    float: right;
+    height: 30px;
+    margin-bottom: 2em;
+    
+}
+
+ul {
+    text-decoration-style: none;
+
+}
+
+li {
+    display: inline-block;
+    padding: 1em;
+       
+}
+
+li a {
+    color: gray;
+    text-decoration: none;
+}
+
+#insideaboutme {
+    width: 960px;
+    height: 460px;
+    padding: 20px;
+    background: white;
+    color: turquoise;
+    margin: 130px auto;
+    clear:both;
+    
+}
+
+
+/* #insideaboutme {
+    position: absolute;
+    right: 235px;
+    bottom: 160px;
+    width: 960px;
+    height: 460px;
+    padding: 20px;
+    background: white;
+    color: turquoise;
+} */
+
+
+
+hr {
+    border-width: 1px;
+    border-color: gray;
+}
+
+.photos {
+    float: left;
+    width: 33.3%;
+    /* padding: 30px; */
+    margin-top: -10px;
+    margin-bottom: 10px;
+    z-index: -3;
+
+}
+
+
+.bars {
+    position: absolute;
+    background-color: turquoise;
+    margin-top: 90px;
+    width: 16%;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.holder{
+    clear: both;
+    width: 100%;
+    height: auto;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    float: left;
+    padding: 15px 0 0 0;
+}
+
+.picture {
+    height: auto;
+    width: 25%;
+    margin-right: 20px;
+    float: left;
+}
+
+.paragraph {
+    float: left;
+    font-size: 24px;
+    color: gray;
+    /* text-indent: 20px; */
+    margin-left: auto;
+    line-height: 29px;
+}
+
+.titles {
+    font-size: 18px;
+    color: turquoise;
+    margin-top: -5;
+}
+
+.titles input {
+    width: 100%;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    border-width: 1px;
+}
+
+.messagebox textarea {
+    width: 100%;
+}
+
+.messagebox {
+    margin-top: -15px;
+    
+    
+}
+
+.messagebox input {
+    background-color: turquoise;
+    margin-top: 5px;
+    width: 70px;
+    height: 25px;
+    color: white;
+    font-size: 16px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    height: 12%;
+    background-color: darkgrey;
+    margin: auto;
+    border-top: 5px solid turquoise;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 980px) {
+    
+
+    .wrapper{
+        width: 80%;
+    }
+    #insideaboutme {
+        width: 100%;
+        /* margin: 130px 100px; */
+        float: left;
+        z-index: 1;
+        
+    }
+    .container{
+        width: 80%;
+        
+      } 
+
+    .bars {
+        width: 12%;
+    }
+
+    img {
+        width: 89%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    
+}
+
+@media screen and (max-width: 640px) {
+
+
+
+}
