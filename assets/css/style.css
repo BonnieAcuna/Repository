@@ -3,7 +3,7 @@
 }
 
 body {
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ header {
     margin: 0 auto;
    
   } 
-  #name {
+  .name {
       float: left;
       text-align: center;
       color: white;
@@ -36,35 +36,7 @@ header {
       font-size: 32px;  
   }
 
-
- /* /* #name {
-    float: left;
-    width: 15%;
-    height: 10%;
-    text-align: center;
-    color: white;
-    background-color: turquoise;
-    margin-top: auto;
-    margin-left: 17%;
-    padding-top: 20px;   
-} */
  
-/* .container {
-    background-color: white;
-    width: 100%;
-    height: 3.4em;
-    border-bottom: 1px solid gray; 
-
-} */
-/* #topnav {
-    float: right;
-    list-style-type: none;
-      
-} */
-.wrapper{
-    width: 960px;
-    margin: 50px auto;
-}
 
 #topnav {
     float: right;
@@ -80,7 +52,7 @@ ul {
 
 li {
     display: inline-block;
-    padding: 1em;
+    padding: 10px;
        
 }
 
@@ -89,28 +61,16 @@ li a {
     text-decoration: none;
 }
 
+
 #insideaboutme {
-    width: 960px;
-    height: 460px;
+    width: 900px;
+    height: 400px;
     padding: 20px;
     background: white;
     color: turquoise;
     margin: 130px auto;
-    clear:both;
     
 }
-
-
-/* #insideaboutme {
-    position: absolute;
-    right: 235px;
-    bottom: 160px;
-    width: 960px;
-    height: 460px;
-    padding: 20px;
-    background: white;
-    color: turquoise;
-} */
 
 
 
@@ -119,34 +79,42 @@ hr {
     border-color: gray;
 }
 
-.photos {
+/* .photos {
     float: left;
-    width: 33.3%;
-    /* padding: 30px; */
+    width: 30px;
+    height: 30px;
+    padding: 30px;
     margin-top: -10px;
     margin-bottom: 10px;
-    z-index: -3;
+    z-index: -3; 
 
+} */
+.photos {
+    float: left;
+    margin: 0px 70px 0px 70px;
+    z-index: -3;
+    padding: 20px
+}
+
+.yachtrock {
+    font-size: 16px;
+    padding: 2px;
 }
 
 
 .bars {
     position: absolute;
     background-color: turquoise;
-    margin-top: 90px;
-    width: 16%;
-    height: 40px;
+    margin-top: 100px;
+    width: 100px;
+    height: 25px;
     text-align: center;
     color: white;
-    font-size: 24px;
-    padding: 5px;
-}
+    font-size: 20px;
+    padding: 1px;
+} 
 
-.holder{
-    clear: both;
-    width: 100%;
-    height: auto;
-}
+
 
 
 .row::after {
@@ -157,24 +125,22 @@ hr {
 
 img {
     float: left;
-    padding: 15px 0 0 0;
+    width: 100px;
+    height: 150px;
 }
 
 .picture {
-    height: auto;
-    width: 25%;
+    height: 50%;
+    width: 20%;
     margin-right: 20px;
     float: left;
+    padding: 0;
 }
 
-.paragraph {
-    float: left;
-    font-size: 24px;
+p {
     color: gray;
-    /* text-indent: 20px; */
-    margin-left: auto;
-    line-height: 29px;
 }
+
 
 .titles {
     font-size: 18px;
@@ -193,6 +159,7 @@ img {
 
 .messagebox textarea {
     width: 100%;
+    border-color: gray;
 }
 
 .messagebox {
@@ -225,41 +192,96 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
-    
 
-    .wrapper{
-        width: 80%;
+    .container {
+        width: 768px;
     }
+
     #insideaboutme {
-        width: 100%;
-        /* margin: 130px 100px; */
-        float: left;
-        z-index: 1;
-        
-    }
-    .container{
-        width: 80%;
-        
-      } 
-
-    .bars {
-        width: 12%;
+        width: 768px;
+        padding: 10px;
+        /* height: 650px; */
     }
 
-    img {
-        width: 89%;
+    p {
+        padding: 20px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
-
-
     
+    body {
+        font-size: 21px;
+    }
+    
+    .container {
+        width: 80%;
+    }
+
+    #insideaboutme {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+
+    li {
+        padding: 10px 7px 0px 7px;
+    }
+
+    .name {
+        padding: 22.4px;
+        font-size: 28px;
+    }
+
+    .messagebox {
+        margin-top: -10px;
+    }
+
+    .textarea.row {
+        row: 12;
+    }
 }
+
+
 
 @media screen and (max-width: 640px) {
+    
+    body {
+        font-size: 19px;
+    }
+    
+    header {
+        position: static;
+        height: 130px;
+    }
 
+    .name {
+        width: 100%;
+        float: none;
+    }
+    .container {
+        height: auto;
+    }
 
+    #insideaboutme {
+        margin: 59px auto;
+        width: 50%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    #topnav{
+        float: none;
+        text-align: center;
+        margin: 0px 53px 0px 0px;
+    }
+    .picture {
+        width: 50%;
+        margin: 0px 5px 0px 65px;
+        float: none;
+        padding: 0;
+    }
+    
+    
 
 }
+    
