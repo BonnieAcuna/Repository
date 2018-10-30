@@ -33,8 +33,13 @@ header {
       color: white;
       background-color: turquoise;
       padding: 20px; 
-      font-size: 32px;  
+      font-size: 32px; 
+      margin-left: 30px; 
   }
+
+.wrapper {
+    height: 100%;
+}
 
  
 
@@ -64,7 +69,7 @@ li a {
 
 #insideaboutme {
     width: 900px;
-    height: 400px;
+    height: 600px;
     padding: 20px;
     background: white;
     color: turquoise;
@@ -79,16 +84,7 @@ hr {
     border-color: gray;
 }
 
-/* .photos {
-    float: left;
-    width: 30px;
-    height: 30px;
-    padding: 30px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    z-index: -3; 
 
-} */
 .photos {
     float: left;
     margin: 0px 70px 0px 70px;
@@ -130,7 +126,7 @@ img {
 }
 
 .picture {
-    height: 50%;
+    height: 40%;
     width: 20%;
     margin-right: 20px;
     float: left;
@@ -200,7 +196,11 @@ footer {
     #insideaboutme {
         width: 768px;
         padding: 10px;
-        /* height: 650px; */
+        
+    }
+
+    .name {
+        margin-left: 5px;
     }
 
     p {
@@ -211,7 +211,7 @@ footer {
 @media screen and (max-width: 768px) {
     
     body {
-        font-size: 21px;
+        font-size: 20px;
     }
     
     .container {
@@ -221,6 +221,11 @@ footer {
     #insideaboutme {
         width: 80%;
         margin: 100px auto;
+    }
+
+    p {
+        padding: 1px;
+        margin-top: auto;
     }
 
 
@@ -237,9 +242,7 @@ footer {
         margin-top: -10px;
     }
 
-    .textarea.row {
-        row: 12;
-    }
+    
 }
 
 
@@ -253,6 +256,7 @@ footer {
     header {
         position: static;
         height: 130px;
+        
     }
 
     .name {
@@ -261,12 +265,13 @@ footer {
     }
     .container {
         height: auto;
+        width: 100%;
     }
 
     #insideaboutme {
         margin: 59px auto;
         width: 50%;
-        height: auto;
+        height: 375%;
         margin-bottom: 100px;
     }
     #topnav{
@@ -275,11 +280,15 @@ footer {
         margin: 0px 53px 0px 0px;
     }
     .picture {
-        width: 50%;
-        margin: 0px 5px 0px 65px;
+        width: 100%;
         float: none;
         padding: 0;
     }
+
+
+
+
+    
     
     
 
